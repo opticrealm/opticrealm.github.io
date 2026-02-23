@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Physics Explorer - CBSE</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="home.html">Physics Explorer</a>
+        <div class="nav-links">
+          <a href="home.html">Home</a>
+          <a href="academics.html" aria-current="page">Academics</a>
+          <a href="facts.html">Facts</a>
+          <a href="blogs.html">Blogs</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page">
+      <p class="breadcrumb">
+        <a href="home.html">Home</a> / <a href="academics.html">Academics</a> /
+        CBSE
+      </p>
+      <h1>CBSE Physics</h1>
+      <p class="subtitle">
+        Upload CBSE PDFs and display them as clickable links.
+      </p>
+
+      <section class="content-card">
+        <h2>Upload PDFs</h2>
+        <p>
+          Select one or more PDF files to generate quick links below. This keeps
+          the page modular and easy to update with future materials.
+        </p>
+
+        <label for="pdfUpload" class="btn">Choose PDF files</label>
+        <input id="pdfUpload" class="hidden-input" type="file" accept="application/pdf" multiple />
+
+        <ul id="pdfList" class="pdf-list" aria-live="polite">
+          <li class="muted">No PDFs uploaded yet.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
